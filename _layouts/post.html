@@ -39,7 +39,7 @@ layout: default
   {% endif %}
   {% if page.next.url %}
     <span class="next" >
-      <a href="blog.totemblog.tk/{{ page.next.url }}">
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
         下一篇 →
       </a>
     </span>
