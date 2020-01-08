@@ -32,7 +32,7 @@ layout: default
 <div class="pagination">
   {% if page.previous.url %}
     <span class="prev" >
-      <a href="blog.totemblog.tk/{{ page.previous.url }}">
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
         ← 上一篇
       </a>
     </span>
