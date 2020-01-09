@@ -6,7 +6,6 @@ Author: 梦貘
 categories: 琐碎文字
 tags: [琐碎文字]
 comments: true
-toc: true
 --- 
 
 > 编者按：此文为从草稿箱里翻出来的旧文，主要是以台词的方式回顾整场电影。
