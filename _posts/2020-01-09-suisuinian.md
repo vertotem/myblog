@@ -7,6 +7,7 @@ categories: 碎碎念
 tags: [碎碎念]
 comments: true
 toc: true
+pinned: true
 --- 
 折腾了好几天，总算把这个博客搞好了。虽然有很多不完善的地方，基本上也是完全folk别人的代码，但看着一个网站慢慢在自己手里变完善还是一件很酷的事。
 
