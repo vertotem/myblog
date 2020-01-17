@@ -2,7 +2,7 @@
 layout: post
 title: 我手写我口--我为什么要建立这个博客
 date: 2020-01-08
-Author: 梦貘
+author: 梦貘
 categories: 碎碎念
 tags: [碎碎念]
 comments: true
