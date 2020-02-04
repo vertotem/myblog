@@ -30,6 +30,8 @@ navigation:
     url: /archive
   - name: 标签
     url: /tags
+  - name: 墙内备份
+    url: https://vertotem.gitee.io/myblog/
 
 # 每页的文章数
 paginate: 8
