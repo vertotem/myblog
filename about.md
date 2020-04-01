@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于本博
 permalink: /about/
 ---
 
