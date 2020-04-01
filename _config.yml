@@ -30,6 +30,8 @@ navigation:
     url: /archive
   - name: 标签
     url: /tags
+  - name: 资源站
+    url: /pan
 
 # 每页的文章数
 paginate: 8
