@@ -3,7 +3,7 @@ layout: page
 title: 关于资源站的说明
 permalink: /pan/
 ---
-## [点此进入资源站](https://pan.totemblog.tk/)
+## [点此进入资源站](http://pan.totemblog.tk/)
 
 ### 使用须知
 
