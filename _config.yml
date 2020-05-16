@@ -32,6 +32,8 @@ navigation:
     url: /tags
   - name: 资源站
     url: /pan
+  - name: 友情链接
+    url: /friends
 
 # 每页的文章数
 paginate: 8
@@ -58,7 +60,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-footer-text: 保留一切权利，未经许可禁止转载--友情链接：[十里博客](https://blog.wo52.xyz/)
+footer-text: 保留一切权利，未经许可禁止转载
 
 # 评论，注意，请不要同时添加多种不同的评论区
 
