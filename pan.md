@@ -3,6 +3,9 @@ layout: page
 title: 关于资源站的说明
 permalink: /pan/
 ---
+
+> 7月15日消息：资源站暂不可用，可能永久性关闭，后期是否恢复另行通知
+
 ## [点此进入资源站](http://pan.totemblog.tk/)
 
 ### 使用须知
