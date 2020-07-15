@@ -4,8 +4,7 @@ title: 友情链接
 permalink: /friends/
 ---
 
-- ## [十里博客](https://blog.wo52.xyz/)
-*失效链接*
+- ## [十里博客](https://www.wo52.xyz/)
 
 简介：一个网络技术类的博客
 
