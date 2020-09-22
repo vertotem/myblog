@@ -6,7 +6,6 @@ author: 梦貘
 categories: 他山之石
 tags: [他山之石]
 comments: true
-pinned: true
 --- 
 
 > 编者按：今天突然想起了走向共和里面孙文先生的这一段演讲词，又重温了一遍，真的是很精彩，遂将文字稿转载之。
