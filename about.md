@@ -6,7 +6,7 @@ permalink: /about/
 
 此博客为梦貘的个人博客
 
-**关于博主： **
+**关于博主：  ** 
 
 Space Asgardia公民/FSM泛面宗教徒/精神白左/反贼/无用之人
 
