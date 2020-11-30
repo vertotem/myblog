@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 观点|“内卷”与“加速”被滥用的背后
-date: 2020-11-230
+date: 2020-11-30
 author: 梦貘
 categories: 碎碎念
 tags: [碎碎念]
