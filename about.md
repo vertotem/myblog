@@ -24,6 +24,8 @@ Space Asgardia公民/FSM泛面宗&喵喵教信徒/爱与自由的卫道士/纯�
 
 6、因技术问题，本博不设评论功能，若您希望与我交流观点，可在本博任意界面底部找到邮箱地址，**欢迎邮件交流**。
 
-或许您可以看看[博主的杂物间](https://mengmoo.wordpress.com/)
+如果您喜欢我的文字，也可以考虑[赞赏](https://i.loli.net/2021/05/16/flXKbUcOzQGWVhC.jpg)我
 
-Last Update：2021/3/30
+![](https://i.loli.net/2021/05/16/flXKbUcOzQGWVhC.jpg)
+
+Last Update：2021/5/16
