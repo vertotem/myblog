@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 学生公寓住宿条例
-date: 202103
+date: 2021-12-03
 author: 梦貘
 categories: 臆想
 tags: [臆想]
