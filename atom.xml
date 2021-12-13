@@ -1,0 +1,32 @@
+---
+layout nil
+---
+xml version=1.0
+feed xmlns=httpwww.w3.org2005Atom
+ 
+  titleluolinjia.comtitle
+  link href=httpluolinjia.comcn
+  link type=applicationatom+xml rel=self href=httpluolinjia.comcnatom.xml
+  updated{{ site.time  date_to_xmlschema }}updated
+  idhttpluolinjia.comcnid
+  author
+    nameKarl Luoname
+    emailideexto@gmail.comemail
+  author
+
+
+ {% for post in site.posts %}
+  entry
+    id{{ site.url }}{{ post.id }}id
+    link type=texthtml rel=alternate href={{ site.url }}{{ post.url }}
+    title{{ post.title  xml_escape }}title
+    updated{{ post.date  date_to_xmlschema }}updated
+    author
+      nameKarl Luoname
+      urihttpluolinjia.comcnuri
+    author
+    content type=html{{ post.content  xml_escape }}content
+  entry
+ {% endfor %}
+
+feed
