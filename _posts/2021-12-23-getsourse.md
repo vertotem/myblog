@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 年末巨献（大概？）| 如何优雅的找资源
+title: 年末巨献（大概？）|如何优雅的找资源
 date: 2021-12-23
 Author: 梦貘
 categories: 碎碎念
