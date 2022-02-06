@@ -7,7 +7,7 @@ layout: default
 {% endif %}
 
 <div class="posts">
-
+  
   {% for post in site.posts %}
     {% if post.pinned==true %}
       <article class="post pinned">
@@ -16,7 +16,7 @@ layout: default
         </h1>
 
         <div clsss="meta">
-
+          
           <span class="author">
             {{ post.author }}
           </span>
@@ -40,15 +40,18 @@ layout: default
           </script>
         </div>
 
-        <div class="entry">
-          {{ post.excerpt | truncate: 200 }}
+       <div class="post-excerpt">
+          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {%   else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}
+          <p>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+          </p>
         </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
+    </article>
     {% endif %}
   {% endfor %}
-
+  
   {% for post in paginator.posts %}
     {% unless post.pinned %}
     <article class="post">
@@ -57,11 +60,11 @@ layout: default
       </h1>
 
       <div clsss="meta">
-
+        
         <span class="author">
           {{ post.author }}
         </span>
-
+            
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
@@ -77,12 +80,15 @@ layout: default
         </ul>
       </div>
 
-      <div class="entry">
-        {{ post.excerpt | truncate: 200 }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+      <div class="post-excerpt">
+          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {%   else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}
+          <p>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+          </p>
+        </div>
+    </article>  
     {% endunless %}
   {% endfor %}
 </div>
