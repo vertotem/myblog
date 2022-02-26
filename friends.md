@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 友链
+title: 友情链接
 permalink: /friends/
 ---
 
-- ## [十里博客](https://www.wo52.xyz/)
-
-简介：一个网络技术类的博客
+*似乎来到了内容的荒原...*
 
 ___
 
-交换友链请联系email： admin@totemblog.tk
+交换友链请联系email: [i@b-hu.org](mailto:i@b-hu.org)
