@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 友情链接
+title: 友链
 permalink: /friends/
 ---
 
