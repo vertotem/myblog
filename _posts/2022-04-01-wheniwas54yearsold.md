@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 接龙|在我54岁时
+title: 接龙|在我五十四岁时
 date: 2022-04-01
 author: 梦貘
 categories: 臆想
@@ -532,4 +532,4 @@ comments: true
 
 *[16]感谢九位笔者的参与与创作和河童的整理，感谢每位读者的阅读。*
 
-*[17]Asakusa公众号：**野渡夜潮（LanguorSavior）***
+*[17]Asakusa公众号：野渡夜潮（LanguorSavior）*
