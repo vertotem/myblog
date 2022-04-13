@@ -15,14 +15,15 @@ comments: true
 <del><i>顺便试试在Jekyll里内嵌APlayer的效果</i></del>
 
 <!-- more -->
-<p><script type="text/javascript">
- var ap = new APlayer({
+
+<script>
+        const ap = new APlayer({
+    container: document.getElementById('aplayer'),
     audio: [{
         name: '嘘',
         artist: '艾索',
         url: 'https://drive.b-hu.org/music/xu-aisuo.mp3',
         cover: 'https://y.qq.com/music/photo_new/T002R300x300M000000lKfvl0dHqmB_1.jpg'
     }]
-});
-ap.init();  
-</script></p>
+}); 
+</script>
