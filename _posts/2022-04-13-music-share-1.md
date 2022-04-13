@@ -20,8 +20,8 @@ comments: true
 
 <!-- more -->
 
-const ap = new APlayer({
-    container: document.getElementById('aplayer'),
+<script type="text/javascript">
+ var ap = new APlayer({
     audio: [{
         name: '嘘',
         artist: '艾索',
@@ -29,3 +29,5 @@ const ap = new APlayer({
         cover: 'https://y.qq.com/music/photo_new/T002R300x300M000000lKfvl0dHqmB_1.jpg'
     }]
 });
+ap.init();  
+</script>
