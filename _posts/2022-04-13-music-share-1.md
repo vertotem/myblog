@@ -16,8 +16,8 @@ comments: true
 
 <!-- more -->
 
-<script type="text/javascript">
- var ap = new APlayer({
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
     audio: [{
         name: '嘘',
         artist: '艾索',
@@ -25,5 +25,3 @@ comments: true
         cover: 'https://y.qq.com/music/photo_new/T002R300x300M000000lKfvl0dHqmB_1.jpg'
     }]
 });
-ap.init();  
-</script>
