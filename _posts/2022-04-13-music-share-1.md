@@ -8,11 +8,9 @@ tags: [碎碎念]
 comments: true
 ---
 
-<head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
 <div id="aplayer"></div>
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-</head>
 
 今天心情不错，想分享一首歌。
 
