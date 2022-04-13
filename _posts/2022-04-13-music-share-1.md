@@ -20,11 +20,12 @@ comments: true
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     autoplay: true,
+    fixed: true,
     audio: [{
         name: '嘘',
         artist: '艾索',
         url: 'https://drive.b-hu.org/music/xu-aisuo.mp3',
         cover: 'https://y.qq.com/music/photo_new/T002R300x300M000000lKfvl0dHqmB_1.jpg'
-    }],
+    }]
 });
 </script>
