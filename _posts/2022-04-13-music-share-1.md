@@ -14,7 +14,7 @@ comments: true
 
 <del><i>顺便试试在Jekyll里内嵌APlayer的效果</i></del>
 
-* 点击页面左下角的小播放器就能听了 *
+*点击页面左下角的小播放器就能听了 *
 
 <!-- more -->
 
