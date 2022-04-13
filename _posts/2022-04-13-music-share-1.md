@@ -8,10 +8,6 @@ tags: [碎碎念]
 comments: true
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-<div id="aplayer"></div>
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-
 今天心情不错，想分享一首歌。
 
 是艾索唱的《罗小黑战记》的片尾曲《嘘》，每次听这个歌，我都会感觉特别温暖，然后就会开心起来。
