@@ -15,8 +15,7 @@ comments: true
 <del><i>顺便试试在Jekyll里内嵌APlayer的效果</i></del>
 
 <!-- more -->
-
-<script type="text/javascript">
+<p><script type="text/javascript">
  var ap = new APlayer({
     audio: [{
         name: '嘘',
@@ -26,4 +25,4 @@ comments: true
     }]
 });
 ap.init();  
-</script>
+</script></p>
