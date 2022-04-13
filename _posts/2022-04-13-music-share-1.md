@@ -17,3 +17,5 @@ comments: true
 <!-- more -->
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://drive.b-hu.org/music/xu-aisuo.html"></iframe>
+
+[点此下载MP3文件](https://drive.b-hu.org/music/xu-aisuo.mp3)
