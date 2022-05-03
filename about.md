@@ -12,6 +12,6 @@ permalink: /about/
 
 **Slogan:** 做自己认为对的事，然后做好接受事与愿违的准备
 
-**小项目：** [[梦的杂货间]](https://mo.b-hu.org/)、[[B-HU 资源]](https://s.b-hu.org/)、[[B-HU 临时笔记]](http://t.b-hu.org/note/i.html)、[[洪后防疫科普手册]](https://1.gover.ml/)
+**小项目：** [[梦的杂货间]](//mo.b-hu.org/)、[[B-HU 资源]](//s.b-hu.org/)、[[B-HU 临时笔记]](//t.b-hu.org/note/i.html)、[[洪后防疫科普手册]](//1.gover.ml/)、[[LibGen新书速递]](//b-hu.org/lib/)
 
 **联系方式:** [i@b-hu.org](mailto:i@b-hu.org)
