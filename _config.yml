@@ -33,7 +33,7 @@ navigation:
   - name: 友链
     url: /friends
   - name: 推书
-    url: /lib
+    url: b-hu.org/lib/
 
 # 每页的文章数
 paginate: 8
