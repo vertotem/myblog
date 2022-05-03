@@ -32,6 +32,8 @@ navigation:
     url: /tags
   - name: 友链
     url: /friends
+  - name: 推书
+    url: /lib
 
 # 每页的文章数
 paginate: 8
