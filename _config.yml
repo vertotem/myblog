@@ -56,7 +56,7 @@ footer-links:
   tumblr: # https://<username>.tumblr.com
   twitter: # https://www.twitter.com/<your_twitter_username> 
   youtube: # channel/<your_long_string> or user/<user-name>
-  mastodon: @meomo
+  mastodon: meomo
 
 # 站点页脚的文字
 footer-text: 除非特殊声明，原创文章采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC-BY-NC-SA 4.0 许可协议</a>.<br/><a href="https://icp.gov.moe/?keyword=20220127" target="_blank">萌ICP备20220127号</a>
