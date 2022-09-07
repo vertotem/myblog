@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<title>写本书玩</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./nexmoe.css">
+<link rel="shortcut icon" href="./icon.png">
+</head>
+<script src="./jquery.min.js"></script>
+<script language="javascript">
+    var tags = [ "写一本书从未如此轻松！",
+                 "在此获得创作的灵感！",
+                 "莎士比亚为本页提供了很大帮助",
+                 "这是一条标语",
+                 "喂，出来！",
+                 "嘿，有人在吗？",
+                 "我觉得这些标题放到书店里能大卖（x",
+                 "Carpe Diem!",
+                 "全自动赛博暴论制造机！",
+                 "告诉你一个秘密，我完全不会写代码",
+                 "将荒谬进行到底",
+                 "欢迎贡献灵感！",
+                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                 "你是谁？" ];
+    var adj = [ "另一种", "未曾说过", "流动", "静止", "智慧", "精妙", 
+                  "戏谑", "嘲弄", "插队", "糊弄", "慵懒", "爽脆", 
+                  "虚荣", "粗俗", "荣耀", "高贵", "优雅", "不知所云", 
+                  "快乐", "伤感", "上帝", "无助", "疼痛", "被忽视", 
+                  "2019", "寒门", "澄澈", "不焚", "亘古", "永恒", 
+                  "光明", "黑暗", "正义", "快乐", "忧伤", 
+                  "诗意", "密西西比", "圣洁", "沉思", "癫狂", "不可名状", 
+                  "红发", "什么", "痛苦", "赛博", "宗教"];
+    var nun = [ "世界", "神话", "话", "战争", "风暴", 
+                   "浮世绘", "萨满", "塔罗", "水晶球",
+                   "猴子", "利维坦", "大象", "屁话", "力量", 
+                   "秋天", "恶龙", "桔梗花", "蜂鸟", 
+                   "帝国", "吟游诗人", "精灵", "洋葱", 
+                   "乞丐", "野猪", "麻薯", "歪门", 
+                   "女巫", "模样", "坚果", "花生", 
+                   "宙斯", "缪斯", "孔子", "犍陀罗", "卡巴拉", 
+                   "泪水", "心情", "泉水", "苹果", 
+                   "伯罗奔尼撒", "键盘", "期活", "一瞥", 
+                   "风暴", "美德", "世界", "原子", "眼睛", 
+                   "布拉提", "十字架", "上帝", "豌豆", "水晶", "插队", "什么", "习惯", "释迦牟尼" ];
+    var parts1 = [ "简明", "当代", "写给孩子看的", "实用", "居家", "", "" ]               
+    var parts2 = [ "生物学", "物理学", "量子学", "元宇宙", "逻辑学", "原子弹制造方法", "摆烂学", "心理学", "教育学", "种花", "解构", "建构", "烹饪", "穿搭", "治疗", "中医", "粤语", "计算机科学", "文学", "佛学", "拓扑学", "高维空间学", "外星文化", "近地飞行器制造", "太极拳", "高等数学", "国际关系", "经济", "瑜伽"];
+    var parts3 = [ "讲义", "概论", "综述", "教学", "研究", "浅析", "理论", "比较" ]
+    
+    function generateTag()
+    {
+        var tag = tags[ Math.floor(Math.random() * tags.length) ];
+        $('#tag').html( tag );
+    }
+    
+    function generateInsult()
+    {
+        /*生成前半部分*/
+        var front = adj[ Math.floor(Math.random() * adj.length) ] + "的" ;
+        front += nun[ Math.floor(Math.random() * nun.length) ] + "：" ;
+        /*生成后半部分*/
+        var part1 = parts1[ Math.floor(Math.random() * parts1.length) ];
+        var part2 = parts2[ Math.floor(Math.random() * parts2.length) ];
+        var part3 = parts3[ Math.floor(Math.random() * parts3.length) ];
+        var back = part1 + part2 + part3;
+        /*合成*/
+        var insult = "《" + front + back + "》";
+
+        $('#insult').html( insult );
+    }
+    
+    $( document ).ready( function() {
+        generateTag();
+        generateInsult();
+        
+        $('#regenerate').click( function() {
+            generateInsult();
+        });
+    });
+</script>
+<body>
+    <main>
+        <h1 style="text-align: center;">写本书玩</h1>
+        <div id="tag" class="small" style="text-align: right;">Curse like the bard himself!</div>
+        <hr>
+        <div style="text-align: center;">
+        你写了一本叫
+        <h2 id="insult"></h2>
+        的书！
+        <br>
+        <br>
+        <div id="regenerate"><button>再写一本！</button></div>
+        <br>
+        或者...去<a href="./index.html" target="_blank">莫名阁</a>看看？
+        </div>
+        <hr>
+        <footer>Made with ❤ by <a href="https://mo.b-hu.org/" target="_blank">梦貘</a></footer>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_page_pv" style='display:none'>
+            本页总共被访问了<span id="busuanzi_value_page_pv"></span>次</span>
+    </main>
+</body>
