@@ -146,7 +146,7 @@ prose:
           placeholder: "在此输入标题"
           type: "text"
 
-      - name: "data"
+      - name: "date"
         field:
           element: "hidden"
           value: "CURRENT_DATETIME"
