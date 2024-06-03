@@ -59,45 +59,40 @@ exclude:
   - README.md
   - CNAME
 
-# Prose设置
+# Prose设置 
 prose:
   rooturl: "_posts"
   siteurl: "http://mo.b-hu.org"
   media: "images"
   metadata:
     _posts:
-        - name: "title"
-          field:
-            element: "text"
-            label: "title"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          placeholder: "Input your title here"
+          type: "text"
 
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
+          placeholder: "Input your abstract here"
+          type: "text"
 
-        - name: "data"
-          field:
-            element: "hidden"
-            value: "CURRENT_DATETIME"
-
-
-        - name: "author"
-          field:
-            element: "hidden"
-            value: "梦貘"
-
-
-        - name: "categories"
-          field:
-            element: "text"
-            
-        - name: "tags"
-          field:
-            element: "text"
-            
-        - name: "comments"
-          field:
-            element: "hidden"
-            value: "true"
-        
       - name: "layout"
         field:
-            element: "hidden"
-            value: "blog"
+          element: "hidden"
+          value: "post"
+
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
+
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
