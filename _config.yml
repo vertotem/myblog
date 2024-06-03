@@ -61,8 +61,7 @@ exclude:
 
 # Prose设置
 prose:
-  rooturl: "_posts"  
-  ignore: [ '_config.yml']
+  rooturl: "_posts"
   siteurl: "http://mo.b-hu.org"
   media: "images"
   metadata:
@@ -79,7 +78,6 @@ prose:
         field:
             element: "hidden"
             value: "CURRENT_DATETIME"
-        _posts:
         - name: "author"
         field:
             element: "hidden"
