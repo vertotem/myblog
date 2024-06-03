@@ -85,11 +85,9 @@ prose:
         - name: "categories"
         field:
             element: "text"
-            value: "碎碎念"
         - name: "tags"
         field:
             element: "text"
-            value: "[碎碎念]"
         - name: "comments"
         field:
             element: "hidden"
