@@ -66,27 +66,27 @@ prose:
   media: "images"
   metadata:
     _posts:
-        - name: "layout"
+      - name: "layout"
         field:
             element: "hidden"
             value: "blog"
         - name: "title"
-        field:
+          field:
             element: "text"
             label: "title"
         - name: "data"
-        field:
+          field:
             element: "hidden"
             value: "CURRENT_DATETIME"
         - name: "author"
-        field:
+          field:
             element: "hidden"
             value: "梦貘"
         - name: "categories"
-        field:
+          field:
             element: "text"
         - name: "tags"
-        field:
+          field:
             element: "text"
         - name: "comments"
         field:
