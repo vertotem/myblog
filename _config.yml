@@ -60,38 +60,56 @@ exclude:
   - CNAME
 
 # Prose设置 
+
 prose:
   rooturl: "_posts"
   siteurl: "http://mo.b-hu.org"
   media: "images"
   metadata:
     _posts:
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-          placeholder: "Input your title here"
-          type: "text"
-
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          value: ""
-          placeholder: "Input your abstract here"
-          type: "text"
-
       - name: "layout"
         field:
           element: "hidden"
-          value: "post"
+          value: "blog"
 
-      - name: "published"
+      - name: "title"
+        field:
+          element: "text"
+          label: "标题"
+          value: ""
+          placeholder: "在此输入标题"
+          type: "text"
+
+      - name: "data"
+        field:
+          element: "hidden"
+          value: "CURRENT_DATETIME"
+
+      - name: "author"
+        field:
+          element: "hidden"
+          value: "梦貘"
+
+      - name: "categories"
+        field:
+          element: "text"
+          value: ""
+          label: "分类"
+          placeholder: "在此输入分类"
+          type: "text"
+
+      - name: "tags"
+        field:
+          element: "text"
+          value: ""
+          label: "标签"
+          placeholder: "在此输入标签"
+          type: "text"
+
+      - name: "comments"
         field:
           element: "hidden"
           value: "true"
-
       - name: "category"
         field:
           element: "hidden"
