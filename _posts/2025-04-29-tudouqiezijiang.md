@@ -5,7 +5,7 @@ date: '2025-04-29 10:11 +0800'
 layout: post
 title: 食谱（10）|土豆茄子酱
 categories: 食谱
-tags: '[食谱]'
+tags: '食谱'
 ---
 - 备菜
   - 四根茄子，掰成小块
