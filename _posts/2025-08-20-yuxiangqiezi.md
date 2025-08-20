@@ -3,7 +3,7 @@ comments: 'true'
 author: 梦貘
 date: '2025-08-20 16:16 +0800'
 layout: post
-title: yuxiangqiezi
+title: 食谱（28）鱼香茄子
 categories: 食谱
 tags: 食谱
 ---
