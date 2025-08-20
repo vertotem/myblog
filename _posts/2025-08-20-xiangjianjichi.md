@@ -3,7 +3,7 @@ comments: 'true'
 author: 梦貘
 date: '2025-08-20 16:16 +0800'
 layout: post
-title: xiangjianjichi
+title: 食谱（27）香煎鸡翅
 tags: 食谱
 categories: 食谱
 ---
