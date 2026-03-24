@@ -23,6 +23,40 @@
   <script>
     document.getElementById("main").classList.add("withtoc");
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const codeBlocks = document.querySelectorAll('div[class^="language-"]'); // 匹配 Jekyll 渲染的代码块容器
+
+    codeBlocks.forEach(block => {
+        // 如果代码块高度超过一定限制（比如 120px）
+        if (block.scrollHeight > 130) {
+            // 包裹代码块
+            const wrapper = document.createElement('div');
+            wrapper.className = 'code-wrapper';
+            block.parentNode.insertBefore(wrapper, block);
+            wrapper.appendChild(block);
+
+            // 创建“展开”按钮
+            const btn = document.createElement('div');
+            btn.className = 'code-toggle-btn';
+            btn.innerText = '展开代码';
+            wrapper.after(btn);
+
+            btn.addEventListener('click', function() {
+                if (wrapper.classList.contains('expanded')) {
+                    wrapper.classList.remove('expanded');
+                    btn.innerText = '展开代码';
+                    // 点击收起后回到代码顶部，防止视觉丢失
+                    wrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    wrapper.classList.add('expanded');
+                    btn.innerText = '折叠代码';
+                }
+            });
+        }
+    });
+});
+  </script>
   {% endif %}
 
   <div class="wrapper-footer-mobile">

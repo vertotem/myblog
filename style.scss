@@ -749,6 +749,29 @@ footer {
   }
 }
 
+.code-wrapper {
+    position: relative;
+    max-height: 120px; /* 大约 5 行的高度，根据你的行高调整 */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.code-wrapper.expanded {
+    max-height: none;
+}
+
+.code-toggle-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: #f8f9fa;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
