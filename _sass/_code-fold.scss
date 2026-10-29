@@ -1,0 +1,59 @@
+//
+// 代码块自动折叠
+// 超过 3 行的代码块默认折叠，右上角出现「展开 ▾ / 收起 ▴」按钮。
+// 配合 js/code-fold.js 使用（GitHub Pages 纯前端方案，无需插件）。
+//
+
+.code-fold {
+  position: relative;
+  margin: 1em 0;
+
+  // 折叠态：限制高度 + 隐藏溢出（具体高度由 JS 按行高计算后内联设置）
+  &.is-collapsed {
+    overflow: hidden;
+  }
+
+  // 折叠态底部渐隐，提示下方还有内容可展开
+  &.is-collapsed::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3.5em;
+    background: linear-gradient(to bottom, rgba($oc-gray-0, 0), $oc-gray-0);
+    pointer-events: none;
+  }
+
+  // 折叠后去掉内部代码块外边距，避免高度计算错位、段落间距翻倍
+  pre.highlight {
+    margin: 0;
+  }
+}
+
+.code-fold__toggle {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  z-index: 3;
+  font-family: $code-font;
+  font-size: 12px;
+  line-height: 1;
+  padding: 4px 9px;
+  color: $oc-gray-7;
+  background: rgba($oc-white, 0.92);
+  border: 1px solid $oc-gray-3;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    background: $oc-gray-0;
+    color: $oc-teal-7;
+    border-color: $oc-teal-5;
+    outline: none;
+  }
+}
