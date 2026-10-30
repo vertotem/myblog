@@ -34,21 +34,17 @@ comments: true
 
 ![介绍页](../images/muse-original-04-few-things.jpg)
 
-再往下就是确认年龄。这儿给了三个选项，信用卡、Instagram、Facebook，哪个顺手用哪个。我反正是走的信用卡那条路。
+再往下就是确认年龄。这儿给了三个选项，信用卡、Instagram、Facebook，哪个顺手用哪个。我走的是 Facebook 那条路，用的还是我的老号，点 Link Facebook account，授权一下就过去了，省得再绑卡。
 
 ![确认年龄](../images/muse-original-05-age-confirm.jpg)
 
-信用卡那页，长这样。国家选美国，邮编就按图里那个填。会先扣一美元，验证完了会退，原文说 5 到 7 个工作日。我当时看到这页，心里还嘀咕了一下，扣都扣了，退不退……结果还真退了，笑死。
-
-![信用卡验证](../images/muse-original-06-payment.jpg)
-
 走到这一步，基本就成了。Muse 那边显示 Connected，说明账号已经连上了。
 
-![已连接](../images/muse-original-07-connected.jpg)
+![已连接](../images/muse-original-06-connected.jpg)
 
 最后回到本地电脑，登录，顺手把该给的权限给了。辅助功能、录屏，该允许的允许，不想给的也可以跳过，反正不影响先用起来。
 
-![本地权限](../images/muse-original-08-local-permission.jpg)
+![本地权限](../images/muse-original-07-local-permission.jpg)
 
 ## 小结
 
