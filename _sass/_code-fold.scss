@@ -1,41 +1,35 @@
 //
-// 代码块自动折叠
-// 超过 3 行的代码块默认折叠，右上角出现「展开 ▾ / 收起 ▴」按钮。
+// 代码块：复制 + 折叠
+// - 所有代码块右上角都有「复制」按钮
+// - 超过 3 行的代码块默认折叠，展开按钮在代码块下面居中，半透明底色 + 向下箭头
 // 配合 js/code-fold.js 使用（GitHub Pages 纯前端方案，无需插件）。
 //
 
-.code-fold {
+// 所有代码块的外层包裹：给右上角复制按钮提供定位基准
+.code-block {
   position: relative;
   margin: 1em 0;
 
-  // 折叠态：限制高度 + 隐藏溢出（具体高度由 JS 按行高计算后内联设置）
-  &.is-collapsed {
-    overflow: hidden;
+  // 去掉内部代码块外边距，避免高度计算错位、段落间距翻倍
+  pre.highlight,
+  pre {
+    margin: 0;
   }
 
-  // 折叠态底部渐隐，提示下方还有内容可展开
-  &.is-collapsed::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 3.5em;
-    background: linear-gradient(to bottom, rgba($oc-gray-0, 0), $oc-gray-0);
-    pointer-events: none;
-  }
-
-  // 折叠后去掉内部代码块外边距，避免高度计算错位、段落间距翻倍
-  pre.highlight {
+  // 内部高亮容器本身也不要再留外边距
+  div.highlighter-rouge,
+  figure.highlight,
+  div.highlight {
     margin: 0;
   }
 }
 
-.code-fold__toggle {
+// 右上角复制按钮
+.code-copy {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-  z-index: 3;
+  z-index: 5;
   font-family: $code-font;
   font-size: 12px;
   line-height: 1;
@@ -56,4 +50,72 @@
     border-color: $oc-teal-5;
     outline: none;
   }
+
+  &.is-copied {
+    color: $oc-teal-7;
+    border-color: $oc-teal-5;
+  }
+}
+
+.code-fold {
+  // 折叠态：限制高度 + 隐藏溢出（具体高度由 JS 按行高计算后内联设置）
+  &.is-collapsed {
+    overflow: hidden;
+  }
+
+  // 折叠态底部渐隐，提示下方还有内容可展开
+  // 渐隐层在展开按钮下面（按钮 z-index 更高），不会挡住按钮点击
+  &.is-collapsed::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3.5em;
+    background: linear-gradient(to bottom, rgba($oc-gray-0, 0), $oc-gray-0);
+    pointer-events: none;
+    z-index: 2;
+  }
+}
+
+// 下面居中的展开 / 收起按钮
+.code-fold__toggle {
+  z-index: 4;
+  font-family: $code-font;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 18px;
+  color: $oc-gray-7;
+  // 半透明底色：折叠时能透出一点代码，展开后也是半透明
+  background: rgba($oc-white, 0.85);
+  border: 1px solid $oc-gray-3;
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    background: $oc-gray-0;
+    color: $oc-teal-7;
+    border-color: $oc-teal-5;
+    outline: none;
+  }
+}
+
+// 折叠态：按钮在代码块底部居中，压在渐隐层上面
+.code-fold.is-collapsed .code-fold__toggle {
+  position: absolute;
+  bottom: 0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// 展开态：按钮不再绝对定位，回到代码块下面居中
+.code-fold:not(.is-collapsed) .code-fold__toggle {
+  position: static;
+  display: block;
+  margin: 0.5em auto 0;
+  transform: none;
 }
