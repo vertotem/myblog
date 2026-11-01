@@ -71,7 +71,7 @@ comments: true
 
 代码如下，完整版，直接复制就能用：
 
-```vba
+```vb
 Sub ReplaceYellowHighlightWithWhiteUnderline()
     Dim doc As Document
     Dim rng As Range
